@@ -24,6 +24,8 @@ Run `make ci` to complete the application checks.
 `tests/browser/candidate.json` records the candidate revision and asset digests.
 The browser tests verify each downloaded asset before they serve it at the production URL.
 The tests cover keyboard controls, navigation, all four themes, image delivery, and layout at mobile and desktop widths.
+Final `make ci` passed against B069 revision `768f25936497c5aabd426197d21c2100b6e5d9a1`.
+Both browser checks verify the final JavaScript and CSS digests.
 
 The owner must complete the coordinated publication and cache procedure in `mpr-ui/docs/config-migration-deployment-plan.md` before activation.
 Published asset and browser cache acceptance remain separate from candidate validation.
