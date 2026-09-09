@@ -1,2 +1,4 @@
 .pages-dist/
 likeme-site.zip
+tests/browser/node_modules/
+tests/browser/test-results/

@@ -9,9 +9,9 @@ PAGES_BRANCH ?= gh-pages
 PAGES_VERSION ?=
 PAGES_DEPLOY_ARGS ?=
 
-.PHONY: ci pages-build release-contract-test loopaware-site-id-test release pages-artifact publish-release publish deploy pages-deploy
+.PHONY: ci test-shared-ui pages-build release-contract-test loopaware-site-id-test release pages-artifact publish-release publish deploy pages-deploy
 
-ci: pages-build release-contract-test loopaware-site-id-test
+ci: pages-build release-contract-test loopaware-site-id-test test-shared-ui
 
 pages-build:
 	@PAGES_DIST_DIR="$(PAGES_DIST_DIR)" ./scripts/build-pages-artifact.sh
@@ -37,3 +37,6 @@ deploy: pages-deploy
 
 pages-deploy:
 	@"$(RELEASE_TOOL_DIR)/deploy_pages_artifact.sh" --branch "$(PAGES_BRANCH)" --url "$(PAGES_URL)" $(if $(PAGES_VERSION),--version "$(PAGES_VERSION)") $(PAGES_DEPLOY_ARGS)
+
+test-shared-ui: pages-build
+	cd tests/browser && npx playwright test
