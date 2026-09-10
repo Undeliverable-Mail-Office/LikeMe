@@ -1,0 +1,40 @@
+{
+  "observed_at": "2026-09-09T00:10:41.969962+00:00",
+  "observations": [
+    {
+      "url": "https://likeme.mprlab.com/",
+      "status": 200,
+      "sha256": "13c8f8361af0d3ae30efc4729baa69fb46d9b1c409420901448ccdbe43f67b11",
+      "headers": {
+        "Cache-Control": "max-age=600",
+        "Age": "0",
+        "ETag": "\"6a92bb42-7b37\"",
+        "Date": "Wed, 09 Sep 2026 00:10:41 GMT"
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/MarcoPoloResearchLab/mpr-ui@latest/mpr-ui.js",
+      "status": 200,
+      "sha256": "a74e0e5dce0071dfc4164fdc75cee26ceaaaa448dd55ee06c961e715cbe9b206",
+      "headers": {
+        "Cache-Control": "public, max-age=604800, s-maxage=43200",
+        "Age": "7439",
+        "ETag": "W/\"94219-F5WvXJt5qqtbDaY9jwSmMXfn/GU\"",
+        "Date": "Wed, 09 Sep 2026 00:10:41 GMT",
+        "X-Jsd-Version": "3.11.11"
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/MarcoPoloResearchLab/mpr-ui@latest/mpr-ui.css",
+      "status": 200,
+      "sha256": "662b37032b21cac44549ad5376e7bce35bed65915bf4a4c9e86c596e266542c7",
+      "headers": {
+        "Cache-Control": "public, max-age=604800, s-maxage=43200",
+        "Age": "0",
+        "ETag": "W/\"733a-iMaarW0Htu4UnGvIQUc9DLeSLIg\"",
+        "Date": "Wed, 09 Sep 2026 00:10:41 GMT",
+        "X-Jsd-Version": "3.11.11"
+      }
+    }
+  ]
+}
