@@ -24,7 +24,7 @@ Run `make ci` to complete the application checks.
 `tests/browser/candidate.json` records the candidate revision and asset digests.
 The browser tests verify each downloaded asset before they serve it at the production URL.
 The tests cover keyboard controls, navigation, all four themes, image delivery, and layout at mobile and desktop widths.
-Final `make ci` passed against B069 revision `768f25936497c5aabd426197d21c2100b6e5d9a1`.
+For I001, `make ci` passed against B069 revision `768f25936497c5aabd426197d21c2100b6e5d9a1`.
 Both browser checks verify the final JavaScript and CSS digests.
 
 The owner must complete the coordinated publication and cache procedure in `mpr-ui/docs/config-migration-deployment-plan.md` before activation.
@@ -32,3 +32,10 @@ Published asset and browser cache acceptance remain separate from candidate vali
 
 The [public asset record](docs/mpr-ui/public-assets-2026-09-09.json) contains three HTTP observations from one network location.
 The page declares `max-age=600`. The shared assets declare `max-age=604800` and `s-maxage=43200`.
+
+## Theme Control
+
+The footer uses the `theme-control` contract.
+`mpr-ui` keeps the selected mode under `likeme:theme`.
+The browser tests use `mpr-ui` commit `d29f43b96991ff409db968f56e6b3fc57b6d20e0` (`v4.3.5`).
+Production asset URLs retain `@latest`.
